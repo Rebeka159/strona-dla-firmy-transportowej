@@ -44,25 +44,34 @@ header img {
 }
 
 nav {
-  background-color: black;
+  padding: 1% 0 1% 25%;
 }
 
 nav ul {
   list-style: none;
+  max-width: 1124px;
 }
 
 nav ul li {
   float: left;
-  width: 30%;
-  text-align: center;
+  width: 20%;
+  margin: 1%;
+  background-color: black;
 }
 nav ul li:hover {
-  background-color: gray;
+  background-color: rgb(220, 216, 216);
 }
 
 nav ul li a {
   display: block;
-  font-size: 26px;
+  font-size: 20px;
+  border: 2px solid black;
+  padding: 2vh;
   color: aliceblue;
   text-decoration: none;
+  text-align: center;
+}
+
+nav ul a:hover {
+  color: black;
 }
