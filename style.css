@@ -28,6 +28,8 @@ header {
 }
 header > * {
   position: absolute;
+  top: 0%;
+  left: 0;
 }
 header .welcome {
   color: aliceblue;
@@ -73,6 +75,10 @@ nav ul li a {
 
 nav ul a:hover {
   color: black;
+}
+
+div.mobile > * {
+  display: none;
 }
 
 /* orietacja pionowa */
@@ -196,5 +202,60 @@ nav ul a:hover {
 
 /* tryb telefon */
 
-@media (max-width: 370px) {
+@media (max-width: 280px) {
+  body {
+    margin-left: 0vw;
+    margin-right: 0vw;
+  }
+  header {
+    height: 20vh;
+    background-position: 50% 5%;
+  }
+
+  header .welcome {
+    z-index: -1;
+  }
+  div.mobile > * {
+    display: block;
+    margin-top: 3%;
+    margin-left: 1%;
+  }
+
+  div.mobile {
+    display: block;
+    position: relative;
+    top: 0;
+    left: 0%;
+    height: 5vh;
+  }
+
+  div.mobile h1 {
+    font-size: 18px;
+    margin: 0 center;
+    text-align: center;
+  }
+
+  div.mobile p {
+    margin-top: 0%;
+    margin-left: center;
+    text-align: center;
+  }
+
+  nav {
+    padding: 6% 0 1% 25%;
+  }
+
+  nav ul {
+    max-width: 653px;
+  }
+
+  nav ul li {
+    margin: 0 center;
+  }
+
+  nav ul li a {
+    font-size: 16px;
+    border: 1px solid black;
+    padding: 1vh;
+  }
 }
