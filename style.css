@@ -50,7 +50,6 @@ nav {
 
 nav ul {
   list-style: none;
-  max-width: 1124px;
 }
 
 nav ul li {
@@ -137,7 +136,7 @@ div.mobile > * {
   }
 }
 
-@media (max-width: 650px) {
+/* @media (max-width: 650px) {
   header {
     height: 32vh;
   }
@@ -149,7 +148,7 @@ div.mobile > * {
   }
 }
 
-@media (max-width: 650px) {
+@media (max-width: 620px) {
   header {
     height: 28vh;
   }
@@ -199,16 +198,17 @@ div.mobile > * {
     font-size: 10px;
   }
 }
+*/
 
-/* tryb telefon */
+/* tryb telefon, orientacja pionowa */
 
-@media (max-width: 280px) {
+@media (orientation: portrait) and (min-width: 280px) {
   body {
     margin-left: 0vw;
     margin-right: 0vw;
   }
   header {
-    height: 20vh;
+    height: 27vh;
     background-position: 50% 5%;
   }
 
@@ -222,7 +222,6 @@ div.mobile > * {
   }
 
   div.mobile {
-    display: block;
     position: relative;
     top: 0;
     left: 0%;
@@ -242,20 +241,140 @@ div.mobile > * {
   }
 
   nav {
-    padding: 6% 0 1% 25%;
+    margin-top: 8%;
+    border-bottom: 3px solid rgb(73, 72, 72);
+    border-top: 3px solid rgb(73, 72, 72);
   }
 
   nav ul {
-    max-width: 653px;
+    max-width: 1600px;
   }
 
   nav ul li {
     margin: 0 center;
+    background-color: white;
+  }
+  nav ul li:hover {
+    background-color: rgba(220, 216, 216, 0.186);
+  }
+
+  nav ul li a {
+    color: black;
+    font-size: 14px;
+    border: none;
+    padding: 1vh;
+  }
+}
+@media (orientation: portrait) and (min-width: 360px) {
+  div.mobile h1 {
+    font-size: 22px;
+  }
+}
+
+@media (orientation: portrait) and (min-width: 390px) {
+  div.mobile h1 {
+    font-size: 24px;
+  }
+
+  div.mobile p {
+    margin-top: 0.4vh;
+    font-size: 18px;
+  }
+
+  nav {
+    margin-top: 5%;
   }
 
   nav ul li a {
     font-size: 16px;
-    border: 1px solid black;
-    padding: 1vh;
   }
 }
+
+@media (orientation: portrait) and (min-width: 768px) {
+  div.mobile h1 {
+    font-size: 32px;
+  }
+
+  div.mobile p {
+    margin-top: 0.6vh;
+    font-size: 24px;
+  }
+  nav ul li a {
+    font-size: 22px;
+  }
+}
+@media (orientation: portrait) and (min-width: 820px) {
+  div.mobile h1 {
+    font-size: 34px;
+  }
+
+  div.mobile p {
+    font-size: 26px;
+  }
+  nav ul li a {
+    font-size: 24px;
+  }
+}
+
+/* media orentacja pozioma 
+@media (orientation: landscape) and (max-width: 654px) {
+  body {
+    margin-left: 0vw;
+    margin-right: 0vw;
+  }
+  header {
+    height: 55vh;
+    background-position: 50% 32%;
+  }
+
+  header .welcome {
+    z-index: -1;
+  }
+  div.mobile > * {
+    display: block;
+    margin-top: 2%;
+    margin-left: 1%;
+  }
+
+  div.mobile {
+    position: relative;
+    top: 0;
+    left: 0%;
+    height: 2vh;
+  }
+
+  div.mobile h1 {
+    font-size: 24px;
+    margin: 0 center;
+    text-align: center;
+  }
+
+  div.mobile p {
+    margin-top: 0.3%;
+    margin-left: center;
+    text-align: center;
+    font-size: 16px;
+  }
+
+  nav {
+    margin-top: 8%;
+    border-bottom: 3px solid rgb(73, 72, 72);
+    border-top: 3px solid rgb(73, 72, 72);
+  }
+
+
+  nav ul li {
+    margin: 0 center;
+    background-color: white;
+  }
+  nav ul li:hover {
+    background-color: rgba(220, 216, 216, 0.186);
+  }
+
+  nav ul li a {
+    color: black;
+    font-size: 14px;
+    border: none;
+    padding: 1vh;
+  }
+}*/
