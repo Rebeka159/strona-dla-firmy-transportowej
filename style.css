@@ -136,7 +136,7 @@ div.mobile > * {
   }
 }
 
-/* @media (max-width: 650px) {
+ @media (max-width: 650px) {
   header {
     height: 32vh;
   }
@@ -154,55 +154,10 @@ div.mobile > * {
   }
 }
 
-@media (max-width: 530px) {
-  header {
-    height: 25vh;
-  }
-  header .welcome h1 {
-    font-size: 18px;
-  }
-  header .welcome {
-    margin-top: 8%;
-  }
-}
-
-@media (max-width: 470px) {
-  header {
-    height: 22vh;
-  }
-
-  header .welcome h1 {
-    font-size: 16px;
-  }
-  header .welcome p {
-    font-size: 12px;
-  }
-  nav ul li a {
-    font-size: 12px;
-  }
-}
-
-@media (max-width: 420px) {
-  header {
-    height: 20vh;
-  }
-
-  header .welcome h1 {
-    font-size: 14px;
-  }
-  header .welcome p {
-    font-size: 10px;
-  }
-
-  nav ul li a {
-    font-size: 10px;
-  }
-}
-*/
 
 /* tryb telefon, orientacja pionowa */
 
-@media (orientation: portrait) and (min-width: 280px) {
+@media (orientation: portrait) {
   body {
     margin-left: 0vw;
     margin-right: 0vw;
@@ -267,26 +222,37 @@ div.mobile > * {
 }
 @media (orientation: portrait) and (min-width: 360px) {
   div.mobile h1 {
-    font-size: 22px;
+    font-size: 20px;
   }
 }
 
 @media (orientation: portrait) and (min-width: 390px) {
-  div.mobile h1 {
-    font-size: 24px;
-  }
-
   div.mobile p {
     margin-top: 0.4vh;
-    font-size: 18px;
   }
 
   nav {
-    margin-top: 5%;
+    margin-top: 8%;
   }
 
   nav ul li a {
     font-size: 16px;
+  }
+}
+
+@media (orientation: portrait) and (min-width: 480px) {
+  header {
+    height: 27vh;
+    background-position: 50% 24%;
+}
+
+@media (orientation: portrait) and (min-width: 590px) {
+  header {
+    height: 30vh;
+    background-position: 50% 27%;
+  }
+  nav {
+    margin-top: 7%;
   }
 }
 
