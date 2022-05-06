@@ -136,7 +136,7 @@ div.mobile > * {
   }
 }
 
- @media (max-width: 650px) {
+@media (max-width: 650px) {
   header {
     height: 32vh;
   }
@@ -153,7 +153,6 @@ div.mobile > * {
     height: 28vh;
   }
 }
-
 
 /* tryb telefon, orientacja pionowa */
 
@@ -220,30 +219,114 @@ div.mobile > * {
     padding: 1vh;
   }
 }
-@media (orientation: portrait) and (min-width: 360px) {
+@media (orientation: portrait) and (min-width: 150px) {
+  header {
+    height: 10vh;
+    background-position: 50% 22%;
+  }
   div.mobile h1 {
-    font-size: 20px;
+    font-size: 12px;
+  }
+  div.mobile p {
+    font-size: 10px;
+  }
+  nav {
+    padding: 1% 0 1% 10%;
+    margin-top: 2%;
+  }
+  nav ul li {
+    width: 30%;
+    margin: 0%;
+  }
+  nav ul li a {
+    padding: 0.5vh;
+    font-size: 10px;
+  }
+}
+
+@media (orientation: portrait) and (min-width: 190px) {
+  header {
+    height: 12vh;
+  }
+}
+@media (orientation: portrait) and (min-width: 220px) {
+  header {
+    height: 14vh;
+  }
+}
+@media (orientation: portrait) and (min-width: 250px) {
+  header {
+    height: 16vh;
+  }
+  div.mobile h1 {
+    font-size: 14px;
+  }
+  div.mobile p {
+    font-size: 12px;
+    margin-top: 0.4vh;
+  }
+  nav {
+    margin-top: 4%;
+  }
+}
+@media (orientation: portrait) and (min-width: 280px) {
+  header {
+    height: 18vh;
+    background-position: 50% 24%;
+  }
+  div.mobile h1 {
+    font-size: 16px;
+  }
+  div.mobile p {
+    font-size: 14px;
+    margin-top: 0.4vh;
+  }
+  nav {
+    margin-top: 6%;
+  }
+  nav ul li a {
+    font-size: 12px;
+  }
+}
+@media (orientation: portrait) and (min-width: 360px) {
+  header {
+    height: 20vh;
+    background-position: 50% 24%;
+  }
+  div.mobile h1 {
+    font-size: 18px;
+  }
+  nav ul li a {
+    font-size: 14px;
   }
 }
 
 @media (orientation: portrait) and (min-width: 390px) {
-  div.mobile p {
-    margin-top: 0.4vh;
+  header {
+    height: 24vh;
   }
-
-  nav {
-    margin-top: 8%;
-  }
-
   nav ul li a {
     font-size: 16px;
   }
 }
 
-@media (orientation: portrait) and (min-width: 480px) {
+@media (orientation: portrait) and (min-width: 470px) {
   header {
     height: 27vh;
     background-position: 50% 24%;
+  }
+}
+@media (orientation: portrait) and (min-width: 550px) {
+  header {
+    height: 28vh;
+    background-position: 50% 24%;
+  }
+  div.mobile h1 {
+    font-size: 24px;
+  }
+
+  div.mobile p {
+    font-size: 16px;
 }
 
 @media (orientation: portrait) and (min-width: 590px) {
